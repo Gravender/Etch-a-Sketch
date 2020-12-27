@@ -1,0 +1,178 @@
+html {
+    font-size: 10px;
+    background:#0d1238;
+    background-size: cover;
+  }
+body {
+  background-image: url(../oriental-tiles.png);
+  background-blend-mode: difference;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  }
+.bg-text {
+  font-size: 0.9vh;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 2px solid #f1f1f1;
+  position: absolute;
+  top: 4vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 20vw;
+  padding: 5px;
+  text-align: center;
+}
+:root {
+  --content-width: 400px;
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+#containerGrid {
+  position: absolute;
+  top: 46vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  display: grid;
+  width: 30vw;
+  height: 30vw;
+  grid-template-rows: repeat(var(--grid-rows), auto);
+  grid-template-columns: repeat(var(--grid-cols), auto);
+  justify-content: stretch;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+}
+.grid-item:hover{
+  background-color: rgb(255, 0, 0);
+}
+.buttoncontainer{
+  position: absolute;
+  top: 9.2vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 0.5vw;
+  display: flex;
+  justify-content: space-between;
+  width: 30vw;
+  max-width: 50vw;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.button {
+  display: inline-block;
+  padding: 0.5vh 1vw;
+  font-size: 0.9vw;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: rgb(203, 0, 253);
+  color: black;
+  border: none;
+  border-radius: 0.8vw;
+  box-shadow: .1vw .1vw rgb(87, 0, 33);
+}
+
+.button:hover {
+  background-color: #4e003b; /* Green */
+  color: white;
+}
+.slidecontainerGrid {
+  font-size: 0.85vh;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 77vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 30vw; /* Width of the outside container */
+  height: 30vh;
+  justify-content : center;
+}
+.slidecontainerBrush {
+  font-size: 0.85vh;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 13.2vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  width: 30vw; /* Width of the outside container */
+  height: 10vw;
+  justify-content : center;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: #9b0074;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #9b0074;
+  cursor: pointer;
+}
+
+footer{
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 2px solid #f1f1f1;
+  position: absolute;
+  left: 50%;
+  bottom : 0.5vh;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 10vw;
+  padding: 5px;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+a:hover{
+  text-decoration: underline;
+}

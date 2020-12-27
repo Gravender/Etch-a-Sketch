@@ -5,8 +5,30 @@
   <title>Etch-A-Sketch</title>
   <meta name="description" content="A basic Browser based Etch-A-Sketch">
   <meta name="author" content="Gravender">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <script src="js/scripts.js"></script>
+  <div class="bg-text">
+    <h1 style=>Etch-A-Sketch</h1>
+  </div>
+  <div class="buttoncontainer">
+    <button class= 'button' id="1" data-function="Eraser">Eraser</button>
+    <button class= 'button' id="2" data-function="Rainbow">Rainbow</button>
+    <button class= 'button' >Color Picker<input type="color" value="#ff0000" id="input-color"></button>
+    <button class= 'button' id="4" data-function="Grey">Darken</button>
+    <button class= 'button' id="5" data-function="Clear">Clear</button>
+  </div>
+  </div>
+  <div class="slidecontainerBrush">
+    <h1>Brush Strength</h1>
+    <input type="range" min="1" max="255" value="1" class="slider" id="brushStrength">
+  </div>
+  <div id="containerGrid"></div>
+  <div class="slidecontainerGrid">
+    <h1 >Size of Pixels</h1>
+    <input type="range" min="1" max="100" value="50" class="slider" id="gridSizer">
+  </div>
+  <footer>Made by: <a href=https://github.com/Gravender> Gravender</a></footer>
+  <script type="text/javascript" src="js/etchASketch.js"></script>
 </body>
 </html>
